@@ -1,10 +1,12 @@
-package hello.hello_spring;
+package hello.hello;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.Import;
 
+@Import(TestcontainersConfiguration.class)
 @SpringBootTest
-class HelloSpringApplicationTests {
+class HelloApplicationTests {
 
 	@Test
 	void contextLoads() {
